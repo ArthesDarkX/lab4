@@ -6,34 +6,21 @@
 
 
 {\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cwctype$>$}\newline
 {\ttfamily \#include $<$locale$>$}\newline
-{\ttfamily \#include $<$Unit\+Test++/\+Unit\+Test++.\+h$>$}\newline
 {\ttfamily \#include "{}cipher.\+h"{}}\newline
-Граф включаемых заголовочных файлов для main.\+cpp\+:
-\nopagebreak
+Граф включаемых заголовочных файлов для main.\+cpp\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{main_8cpp__incl}
 \end{center}
 \end{figure}
-\doxysubsubsection*{Классы}
-\begin{DoxyCompactItemize}
-\item 
-struct \mbox{\hyperlink{structfixture__key}{fixture\+\_\+key}}
-\begin{DoxyCompactList}\small\item\em Тестовая структура для проверки класса \doxylink{classCipher}{Cipher}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Функции}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{main_8cpp_aac15b3a3c504df2f66512f21e893fe6d}\label{main_8cpp_aac15b3a3c504df2f66512f21e893fe6d} 
-{\bfseries SUITE} (Key)
-\begin{DoxyCompactList}\small\item\em Набор тестов для проверки конструктора ключа. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{main_8cpp_ab144e757530abb6cbb2f60eeb7ce9735}{SUITE}} (ENCRYPT)
-\begin{DoxyCompactList}\small\item\em Набор тестов для проверки шифрования текста. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{main_8cpp_a557b3cf775e1edb91c569212884d31e1}{SUITE}} (DECRYPT)
-\begin{DoxyCompactList}\small\item\em Набор тестов для проверки расшифрования текста. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
-\begin{DoxyCompactList}\small\item\em Главная функция программы. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Главная функция программы \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Подробное описание}
@@ -43,14 +30,11 @@ int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
 1.\+0 
 \end{DoxyVersion}
 \begin{DoxyDate}{Дата}
-01.\+11.\+2026 
+05.\+11.\+2026 
 \end{DoxyDate}
 \begin{DoxyAuthor}{Автор}
 Борискин Я. С. 
 \end{DoxyAuthor}
-\begin{DoxyNote}{Заметки}
-Используется сторонняя библиотека Unit\+Test++ 
-\end{DoxyNote}
 
 
 \label{doc-func-members}
@@ -64,29 +48,24 @@ int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
-Главная функция программы. 
+Главная функция программы 
 
-Устанавливает русскую локаль и запускает все модульные тесты. \begin{DoxyReturn}{Возвращает}
+Устанавливает русскую локаль \begin{DoxyReturn}{Возвращает}
 Код завершения программы. 
 \end{DoxyReturn}
-\Hypertarget{main_8cpp_a557b3cf775e1edb91c569212884d31e1}\index{main.cpp@{main.cpp}!SUITE@{SUITE}}
-\index{SUITE@{SUITE}!main.cpp@{main.cpp}}
-\doxysubsubsection{\texorpdfstring{SUITE()}{SUITE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \label{main_8cpp_a557b3cf775e1edb91c569212884d31e1} 
-SUITE (\begin{DoxyParamCaption}\item[{DECRYPT}]{}{}\end{DoxyParamCaption})}
 
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classCipher__error}{Cipher\+\_\+error}} & Если ключ или текст некорректны \\
+\hline
+\end{DoxyExceptions}
+\texorpdfstring{$<$}{<} Ключ шифрования, вводимый пользователем
 
+\texorpdfstring{$<$}{<} Код выбранной операции
 
-Набор тестов для проверки расшифрования текста. 
+\texorpdfstring{$<$}{<} Введённый пользователем текст
 
-Проверяет корректность расшифрования строк и обработку некорректных входных данных. \Hypertarget{main_8cpp_ab144e757530abb6cbb2f60eeb7ce9735}\index{main.cpp@{main.cpp}!SUITE@{SUITE}}
-\index{SUITE@{SUITE}!main.cpp@{main.cpp}}
-\doxysubsubsection{\texorpdfstring{SUITE()}{SUITE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \label{main_8cpp_ab144e757530abb6cbb2f60eeb7ce9735} 
-SUITE (\begin{DoxyParamCaption}\item[{ENCRYPT}]{}{}\end{DoxyParamCaption})}
+\texorpdfstring{$<$}{<} Зашифрованный текст
 
+\texorpdfstring{$<$}{<} Введённый пользователем текст
 
-
-Набор тестов для проверки шифрования текста. 
-
-Проверяет корректность шифрования строк и обработку некорректных входных данных. 
+\texorpdfstring{$<$}{<} Расшифрованный текст

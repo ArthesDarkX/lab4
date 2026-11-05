@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['key_0',['key',['../classCipher.html#a15e421257e8944e9a79a80d4bfce49aa',1,'Cipher']]]
+  ['length_5ftext_0',['length_text',['../classCipher.html#a62acc63afc27439da0d99da081c6c494',1,'Cipher']]]
 ];
