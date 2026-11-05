@@ -1,0 +1,192 @@
+\doxysection{Класс Cipher}
+\hypertarget{classCipher}{}\label{classCipher}\index{Cipher@{Cipher}}
+
+
+Класс для шифрования методом маршрутной перестановки  
+
+
+
+
+{\ttfamily \#include $<$cipher.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCipher_ae728d0917db639dd49638a268298391f}\label{classCipher_ae728d0917db639dd49638a268298391f} 
+{\bfseries Cipher} ()=delete
+\begin{DoxyCompactList}\small\item\em Конструктор без параметров \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCipher_a0e2455433efc7431723735dba72e1d7f}{Cipher}} (const int \&\mbox{\hyperlink{classCipher_a15e421257e8944e9a79a80d4bfce49aa}{key}})
+\begin{DoxyCompactList}\small\item\em СОздаёт объект шифра для установки ключа \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCipher_a7f2494bb2f3fc1e17a6b5fec76c417ed}{check\+String}} (const std\+::wstring \&string)
+\begin{DoxyCompactList}\small\item\em Проверяет строку на соответсвие правилам \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classCipher_a7301c9422b574b0806b463731a8204de}{encrypt}} (const std\+::wstring \&string)
+\begin{DoxyCompactList}\small\item\em Зашифровывает текст \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classCipher_a21649413e7e42169d1484f23e8516d03}{decrypt}} (const std\+::wstring \&string)
+\begin{DoxyCompactList}\small\item\em Расшифровывает текст \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCipher_a62acc63afc27439da0d99da081c6c494}\label{classCipher_a62acc63afc27439da0d99da081c6c494} 
+unsigned {\bfseries length\+\_\+text} \{\}
+\begin{DoxyCompactList}\small\item\em Длина текста \end{DoxyCompactList}\item 
+\Hypertarget{classCipher_a15e421257e8944e9a79a80d4bfce49aa}\label{classCipher_a15e421257e8944e9a79a80d4bfce49aa} 
+int {\bfseries key} \{\}
+\begin{DoxyCompactList}\small\item\em Ключ шифрования \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для шифрования методом маршрутной перестановки 
+
+В классе ключ устанавливается в конструкторе. Для зашифрования используется метод encrypt. Для расшифрования используется метод decrypt. 
+
+\label{doc-constructors}
+\Hypertarget{classCipher_doc-constructors}
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{classCipher_a0e2455433efc7431723735dba72e1d7f}\index{Cipher@{Cipher}!Cipher@{Cipher}}
+\index{Cipher@{Cipher}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{Cipher()}{Cipher()}}
+{\footnotesize\ttfamily \label{classCipher_a0e2455433efc7431723735dba72e1d7f} 
+Cipher\+::\+Cipher (\begin{DoxyParamCaption}\item[{const int \&}]{key}{}\end{DoxyParamCaption})}
+
+
+
+СОздаёт объект шифра для установки ключа 
+
+Конструктор для установки ключа.
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em key} & ключ шифрования \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classCipher__error}{Cipher\+\_\+error}} & Если ключ меньше или равен нулю.\\
+\hline
+\end{DoxyExceptions}
+Конструктор для установки ключа шифрования. Проверяет, что ключ положительный. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em key} & ключ шифрования \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classCipher__error}{Cipher\+\_\+error}} & Если ключ меньше или равен нулю. \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{classCipher_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{classCipher_a7f2494bb2f3fc1e17a6b5fec76c417ed}\index{Cipher@{Cipher}!checkString@{checkString}}
+\index{checkString@{checkString}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{checkString()}{checkString()}}
+{\footnotesize\ttfamily \label{classCipher_a7f2494bb2f3fc1e17a6b5fec76c417ed} 
+void Cipher\+::check\+String (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{string}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет строку на соответсвие правилам 
+
+Проверяет строку на соответствие правилам
+
+Проверяет, что строка\+:
+\begin{DoxyItemize}
+\item не является пустой;
+\item не содержит цифр;
+\item не содержит строчных букв; Строка не должна содержать строчных букв. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em string} & введённая строка. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classCipher__error}{Cipher\+\_\+error}} & Если строка пустая, в тексте присутствуют числа или строчные буквы.\\
+\hline
+\end{DoxyExceptions}
+Проверяет строку на соответствие правилам\+: Строка не должна быть пустой. Строка не должна содержать чисел. Строка не должна содержать строчных букв. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em string} & введённая строка. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classCipher__error}{Cipher\+\_\+error}} & Если строка пустая, в тексте присутствуют числа или строчные буквы. \\
+\hline
+\end{DoxyExceptions}
+
+\end{DoxyItemize}\Hypertarget{classCipher_a21649413e7e42169d1484f23e8516d03}\index{Cipher@{Cipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily \label{classCipher_a21649413e7e42169d1484f23e8516d03} 
+std\+::wstring Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{text}{}\end{DoxyParamCaption})}
+
+
+
+Расшифровывает текст 
+
+Расшифровывает зашифрованный текст при помощи таблицы. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em string} & зашифрованный текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classCipher__error}{Cipher\+\_\+error}} & Если строка пустая, в тексте присутствуют числа или строчные буквы.\\
+\hline
+\end{DoxyExceptions}
+Расшифровывает зашифрованный текст при помощи таблицы. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em string} & зашифрованный текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованный текст 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Предупреждения}
+Разделителем в таблице используется пробел! 
+\end{DoxyWarning}
+\Hypertarget{classCipher_a7301c9422b574b0806b463731a8204de}\index{Cipher@{Cipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily \label{classCipher_a7301c9422b574b0806b463731a8204de} 
+std\+::wstring Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{string}{}\end{DoxyParamCaption})}
+
+
+
+Зашифровывает текст 
+
+Зашифровывает введённый текст при помощи таблицы. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em string} & открытый текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classCipher__error}{Cipher\+\_\+error}} & Если строка пустая, в тексте присутствуют числа или строчные буквы.\\
+\hline
+\end{DoxyExceptions}
+Зашифровывает введённый текст при помощи таблицы. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em string} & открытый текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Предупреждения}
+Разделителем в таблице используется пробел! 
+\end{DoxyWarning}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{cipher_8h}{cipher.\+h}}\item 
+\mbox{\hyperlink{cipher_8cpp}{cipher.\+cpp}}\end{DoxyCompactItemize}
