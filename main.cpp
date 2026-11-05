@@ -17,14 +17,15 @@
  * @details Устанавливает русскую локаль
  * @return Код завершения программы.
  * @throw Cipher_error Если ключ или текст некорректны
+ * 
 */
 int main()
 {
     std::locale loc("");
     std::locale::global(loc);
 
-    int key{};      ///< Ключ шифрования, вводимый пользователем
-    unsigned op{};  ///< Код выбранной операции
+    int key{};///< Ключ шифрования, вводимый пользователем
+    unsigned op{};///< Код выбранной операции
 
     std::wcout << L"Введите ключ: ";
     std::wcin >> key;
@@ -42,20 +43,20 @@ int main()
             case 1:
             {
                 std::wcout << L"Выбрана операция — шифрование" << L'\n';
-                std::wstring text;                             ///> Введённый пользователем текст
+                std::wstring text;                             ///< Введённый пользователем текст
                 std::wcout << L"Введите текст: ";
                 std::wcin >> text;
-                std::wstring result = cipher.encrypt(text);     ///> Зашифрованный текст
+                std::wstring result = cipher.encrypt(text);     ///< Зашифрованный текст
                 std::wcout << L"Результат: " << result << L'\n';
                 break;
             }   
             case 2:
             {
                 std::wcout << L"Выбрана операция — расшифрование" << L'\n';
-                std::wstring text;                             ///> Введённый пользователем текст
+                std::wstring text;                             ///< Введённый пользователем текст
                 std::wcout << L"Введите текст: ";
                 std::wcin >> text;
-                std::wstring result = cipher.decrypt(text);     ///> Расшифрованный текст
+                std::wstring result = cipher.decrypt(text);     ///< Расшифрованный текст
                 std::wcout << L"Результат: " << result << L'\n';
                 break;
             }
