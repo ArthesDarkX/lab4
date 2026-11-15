@@ -12,22 +12,22 @@
 ## Структура проекта
 
 lab4/
-├── Doxyfile
-├── README.md
-├── Makefile
-├── include/
-│   └── cipher.h
-├── src/
-│   ├── cipher.cpp
-│   └── main.cpp
-├── tests/
-│   └── unittest.cpp
-└── docs/
-    └── html/
-        └── index.html
-    └── latex/
-        ├── Makefile
-        └── refman.tex
+    Doxyfile
+    README.md
+    Makefile
+    include/
+        cipher.h
+    src/
+        cipher.cpp
+        main.cpp
+    tests/
+        unittest.cpp
+    docs/
+        html/
+            index.html
+        latex/
+            Makefile
+            refman.tex
 
 ## Назначение каталогов
 - include/ — заголовочные файлы проекта.
