@@ -1,0 +1,38 @@
+\doxysection{cipher.\+h}
+\hypertarget{cipher_8h_source}{}\label{cipher_8h_source}\index{include/cipher.h@{include/cipher.h}}
+\mbox{\hyperlink{cipher_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <cwctype>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCipher_ae728d0917db639dd49638a268298391f}{Cipher}}}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \mbox{\hyperlink{classCipher_a62acc63afc27439da0d99da081c6c494}{length\_text}}\{\};\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classCipher_a15e421257e8944e9a79a80d4bfce49aa}{key}}\{\};\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{classCipher_ae728d0917db639dd49638a268298391f}{Cipher}}()=\textcolor{keyword}{delete};\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{classCipher_ae728d0917db639dd49638a268298391f}{Cipher}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classCipher_a15e421257e8944e9a79a80d4bfce49aa}{key}});}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCipher_a7f2494bb2f3fc1e17a6b5fec76c417ed}{checkString}}(\textcolor{keyword}{const}\ std::wstring\&\ \textcolor{keywordtype}{string});}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00055\ \ \ \ \ std::wstring\ \mbox{\hyperlink{classCipher_a7301c9422b574b0806b463731a8204de}{encrypt}}(\textcolor{keyword}{const}\ std::wstring\&\ \textcolor{keywordtype}{string});}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00064\ \ \ \ \ std::wstring\ \mbox{\hyperlink{classCipher_a21649413e7e42169d1484f23e8516d03}{decrypt}}(\textcolor{keyword}{const}\ std::wstring\&\ \textcolor{keywordtype}{string});}
+\DoxyCodeLine{00065\ \};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{class\ }Cipher\_error:\ \textcolor{keyword}{public}\ std::invalid\_argument}
+\DoxyCodeLine{00073\ \{}
+\DoxyCodeLine{00074\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{explicit}\ Cipher\_error(\textcolor{keyword}{const}\ std::string\&\ what\_arg)}
+\DoxyCodeLine{00076\ \ \ \ \ :\ std::invalid\_argument(what\_arg)\ \{\}}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{explicit}\ Cipher\_error(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ what\_arg)}
+\DoxyCodeLine{00078\ \ \ \ \ :\ std::invalid\_argument(what\_arg)\ \{\}}
+\DoxyCodeLine{00079\ \};}
+
+\end{DoxyCode}

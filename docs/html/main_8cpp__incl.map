@@ -1,0 +1,16 @@
+<map id="src/main.cpp" name="src/main.cpp">
+<area shape="rect" id="Node000001" title="Главный модуль" alt="" coords="98,5,194,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,77,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,35,74,73,70,69,129,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="111,155,182,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,30,143,66,142,107,145,140,140,138,137,107,138,66,143,35"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="152,80,207,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="153,30,170,66,165,66,151,35"/>
+<area shape="rect" id="Node000005" href="$cipher_8h.html" title="Заголовочный файл для модуля cipher." alt="" coords="232,80,298,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="167,30,234,71,229,72,167,35"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="247,107,181,149,179,144,242,108"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="221,155,274,181"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="264,106,256,141,252,138,260,109"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="298,155,376,181"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="279,105,317,144,311,143,277,110"/>
+</map>

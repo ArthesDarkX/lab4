@@ -1,0 +1,5 @@
+<map id="fixture_key" name="fixture_key">
+<area shape="rect" id="Node000001" title="Тестовая структура для проверки класса Cipher." alt="" coords="5,104,91,131"/>
+<area shape="rect" id="Node000002" href="$classCipher.html" title="Класс для шифрования методом маршрутной перестановки" alt="" coords="18,5,78,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,47,51,104,45,103,46,49"/>
+</map>

@@ -1,0 +1,91 @@
+\doxysection{Файл tests/unittest.cpp}
+\hypertarget{unittest_8cpp}{}\label{unittest_8cpp}\index{tests/unittest.cpp@{tests/unittest.cpp}}
+
+
+Тестировочный модуль  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$locale$>$}\newline
+{\ttfamily \#include $<$Unit\+Test++/\+Unit\+Test++.\+h$>$}\newline
+{\ttfamily \#include "{}cipher.\+h"{}}\newline
+Граф включаемых заголовочных файлов для unittest.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unittest_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structfixture__key}{fixture\+\_\+key}}
+\begin{DoxyCompactList}\small\item\em Тестовая структура для проверки класса \doxylink{classCipher}{Cipher}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{unittest_8cpp_aac15b3a3c504df2f66512f21e893fe6d}\label{unittest_8cpp_aac15b3a3c504df2f66512f21e893fe6d} 
+{\bfseries SUITE} (Key)
+\begin{DoxyCompactList}\small\item\em Набор тестов для проверки конструктора ключа. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{unittest_8cpp_ab144e757530abb6cbb2f60eeb7ce9735}{SUITE}} (ENCRYPT)
+\begin{DoxyCompactList}\small\item\em Набор тестов для проверки шифрования текста. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{unittest_8cpp_a557b3cf775e1edb91c569212884d31e1}{SUITE}} (DECRYPT)
+\begin{DoxyCompactList}\small\item\em Набор тестов для проверки расшифрования текста. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{unittest_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Главная функция программы. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Тестировочный модуль 
+
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+01.\+11.\+2026 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Автор}
+Борискин Я. С. 
+\end{DoxyAuthor}
+\begin{DoxyNote}{Заметки}
+Используется сторонняя библиотека Unit\+Test++ 
+\end{DoxyNote}
+
+
+\label{doc-func-members}
+\Hypertarget{unittest_8cpp_doc-func-members}
+\doxysubsection{Функции}
+\Hypertarget{unittest_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{unittest.cpp@{unittest.cpp}!main@{main}}
+\index{main@{main}!unittest.cpp@{unittest.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{unittest_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Главная функция программы. 
+
+Устанавливает русскую локаль и запускает все модульные тесты. \begin{DoxyReturn}{Возвращает}
+Код завершения программы. 
+\end{DoxyReturn}
+\Hypertarget{unittest_8cpp_a557b3cf775e1edb91c569212884d31e1}\index{unittest.cpp@{unittest.cpp}!SUITE@{SUITE}}
+\index{SUITE@{SUITE}!unittest.cpp@{unittest.cpp}}
+\doxysubsubsection{\texorpdfstring{SUITE()}{SUITE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{unittest_8cpp_a557b3cf775e1edb91c569212884d31e1} 
+SUITE (\begin{DoxyParamCaption}\item[{DECRYPT}]{}{}\end{DoxyParamCaption})}
+
+
+
+Набор тестов для проверки расшифрования текста. 
+
+Проверяет корректность расшифрования строк и обработку некорректных входных данных. \Hypertarget{unittest_8cpp_ab144e757530abb6cbb2f60eeb7ce9735}\index{unittest.cpp@{unittest.cpp}!SUITE@{SUITE}}
+\index{SUITE@{SUITE}!unittest.cpp@{unittest.cpp}}
+\doxysubsubsection{\texorpdfstring{SUITE()}{SUITE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{unittest_8cpp_ab144e757530abb6cbb2f60eeb7ce9735} 
+SUITE (\begin{DoxyParamCaption}\item[{ENCRYPT}]{}{}\end{DoxyParamCaption})}
+
+
+
+Набор тестов для проверки шифрования текста. 
+
+Проверяет корректность шифрования строк и обработку некорректных входных данных. 

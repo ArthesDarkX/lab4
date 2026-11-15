@@ -1,0 +1,60 @@
+\begin{theindex}
+
+  \item {checkString}
+    \subitem {Cipher}, \hyperpage{10}
+  \item {Cipher}, \hyperpage{9}
+    \subitem {checkString}, \hyperpage{10}
+    \subitem {Cipher}, \hyperpage{10}
+    \subitem {decrypt}, \hyperpage{11}
+    \subitem {encrypt}, \hyperpage{12}
+  \item {Cipher\_error}, \hyperpage{13}
+
+  \indexspace
+
+  \item {decrypt}
+    \subitem {Cipher}, \hyperpage{11}
+
+  \indexspace
+
+  \item {encrypt}
+    \subitem {Cipher}, \hyperpage{12}
+
+  \indexspace
+
+  \item {fixture\_key}, \hyperpage{14}
+
+  \indexspace
+
+  \item {include/cipher.h}, \hyperpage{15, 16}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{19}
+    \subitem {unittest.cpp}, \hyperpage{20}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{19}
+
+  \indexspace
+
+  \item {src/cipher.cpp}, \hyperpage{17}
+  \item {src/main.cpp}, \hyperpage{18}
+  \item {SUITE}
+    \subitem {unittest.cpp}, \hyperpage{20, 21}
+
+  \indexspace
+
+  \item {tests/unittest.cpp}, \hyperpage{19}
+
+  \indexspace
+
+  \item {unittest.cpp}
+    \subitem {main}, \hyperpage{20}
+    \subitem {SUITE}, \hyperpage{20, 21}
+
+  \indexspace
+
+  \item {Программа шифрования методом маршрутной перестановки}, 
+		\hyperpage{1}
+
+\end{theindex}
