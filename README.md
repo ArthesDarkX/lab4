@@ -11,23 +11,25 @@
 
 ## Структура проекта
 
+```
 lab4/
-    Doxyfile
-    README.md
-    Makefile
-    include/
-        cipher.h
-    src/
-        cipher.cpp
-        main.cpp
-    tests/
-        unittest.cpp
-    docs/
-        html/
-            index.html
-        latex/
-            Makefile
-            refman.tex
+|-- Doxyfile
+|-- README.md
+|-- Makefile
+|-- include/
+|   -- cipher.h
+|-- src/
+|   |-- cipher.cpp
+|   |-- main.cpp
+|-- tests/
+|   |-- unittest.cpp
+|-- docs/
+    |-- html/
+    |   |-- index.html
+    |-- latex/
+        |-- Makefile
+        |-- refman.tex
+```
 
 ## Назначение каталогов
 - include/ — заголовочные файлы проекта.
@@ -37,22 +39,17 @@ lab4/
 
 ## Запуск программы
 Для запуска программы необходимо:
-Клонировать git-репозиторий:
+1. Клонировать git-репозиторий:
 ```bash
 git clone https://github.com/ArthesDarkX/lab4
 ```
-Далее выполнить команду:
+2. Выполнить команду:
 ```bash
 make
 ```
-после успешной сборки запустить программу
-На Linux:
+3. Запустить программу
 ```bash
 ./cipher
-```
-На Windows:
-```bash
-cipher.exe
 ```
 
 Для запуска тестов необходимо выполнить команду:
