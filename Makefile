@@ -19,7 +19,7 @@ $(TARGET) : $(SOURCES)
 $(TARGET_TEST) : $(SOURCES_TEST)
 	$(CXX) $(CXX_FLAGS) $(SOURCES_TEST) -o $(TARGET_TEST) $(LDLIBS)
 
-test:
+test: $(TARGET_TEST)
 	./$(TARGET_TEST)
 
 clean:
